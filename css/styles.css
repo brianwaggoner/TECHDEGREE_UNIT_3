@@ -1,0 +1,148 @@
+/* Tag Selectors */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: #FFFAF0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #FFFAF0;
+    text-transform: uppercase;
+    background: black;
+    padding: 30px 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+}
+
+fieldset {
+    border: none;
+    
+}
+
+h2,
+legend {
+    font-size: 1.5em;
+    width: 90%;
+    padding: 15px 0;
+} 
+
+p {
+    font-size: 1.25em;
+    color: grey;
+}
+
+label {
+    display: inline-block;
+} 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Class Selectors */
+
+.signup {
+    border-bottom: solid black 5px;
+}
+
+.signup,
+form {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Pseudo Selectors */
+
+.main-header p {
+    margin-top: 0;
+}
+
+.contact label {
+    margin: 10px 0;
+}
+
+.box label {
+    margin: 5px;
+}
+
+/* Attribute Selectors */
+input[type="text"],
+select,
+input[type="email"] {
+    height: 30px;  
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border-radius: 5px;
+    background: #d3d3d3;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus
+ {
+    background: #FFFAF0;
+}
+
+select:focus {
+    background: #FFFAF0;
+}
+
+textarea:focus {
+    background: #FFFAF0;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 0;
+    background: black;
+    color: #FFFAF0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media(min-width:768px) {
+   .contact {
+       flex-direction: row;
+   }
+
+   input[type="text"],
+    input[type="email"],
+    select {
+        width: 75%;
+    }
+
+    .contact label {
+        width: 15%;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
